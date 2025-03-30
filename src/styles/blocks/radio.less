@@ -1,6 +1,7 @@
 .radio {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     align-items: flex-start;
     
     &__item {
@@ -10,10 +11,21 @@
       flex-direction: column;
       align-items: flex-start;
       margin-bottom: 15px;
+=======
+    gap: 15px;
+    
+    &__item {
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
       min-height: 23px;
       padding-left: 23px;
       color: @black;
       cursor: pointer;
+<<<<<<< HEAD
       &:last-child {
         margin-bottom: 0;
       }
@@ -26,6 +38,19 @@
             }
           }
         }
+=======
+    }
+
+    &__input {
+        .is-hidden;
+        &:checked {
+          &~.radio__mark {
+            background-color: @black;
+          }
+        }
+    }
+
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
     &__mark {
         box-sizing: border-box;
         display: block;
@@ -40,11 +65,21 @@
         background-clip: content-box;
         background-color: transparent;
         transition: background-color 0.2s;
+<<<<<<< HEAD
       }
       &__label {
+=======
+    }
+    &__label {
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
         margin-left: 20px;
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
+<<<<<<< HEAD
       }
   }
+=======
+    }
+}
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb

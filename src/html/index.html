@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="ru">
   @@include('blocks/head.html')
   <body class="body">
@@ -27,3 +28,35 @@
     <script src="scripts/main.js"></script>
   </body>
 </html>
+=======
+<html lang="en">
+@@include('blocks/head.html')
+<body class="body">
+    <!-- prettier-ignore -->
+    @@include('blocks/page-header.html')
+
+    <main class="main">
+        <div class="home">
+            <div class="main-title">
+                <p class="main-title__h1">арт — пространство</p> 
+                <svg class="main-title__svg" width="1920" height="325">
+                    <use xlink:href="assets/icons/symbols.svg#LENNI"></use>
+                </svg>
+                <p class="main-title__h1">для людей, горящих сердцЕМ и делом <br> место для настоящего</p>
+            </div>
+            
+            <!-- prettier-ignore -->
+            @@include('blocks/index-wants.html')
+            <!-- prettier-ignore -->
+            @@include('blocks/blog-listing.html', {"class": "home__listing"})
+        </div>
+    </main>
+
+    <!-- prettier-ignore -->
+    @@include('blocks/page-footer.html')
+
+    <!-- prettier-ignore -->
+    @@include('blocks/event-pp.html')
+</body>
+</html>
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb

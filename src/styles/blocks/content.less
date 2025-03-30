@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .content {
     font-family: @font1;
     font-weight: 400;
@@ -17,10 +18,34 @@
             margin-top: 0;
         }
         &:last-child {
+=======
+.content{
+    font-family: @font1;
+    font-size: 16px;
+    line-height: 1.375;
+    font-weight: 400;
+    word-wrap: break-word;
+
+    h1, 
+    h2, 
+    h3, 
+    h4, 
+    h5, 
+    h6{
+        margin: 1.3em 0 0.8em;
+        font-weight: 600;
+
+        &:first-child{
+            margin-top: 0;
+        }
+
+        &:last-child{
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
             margin-bottom: 0;
         }
     }
 
+<<<<<<< HEAD
     h1 {
         font-size: 32px;
     }
@@ -53,17 +78,70 @@
     }
     ul,
     ol {
+=======
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+    h6{
+        font-size: 16px;
+    }
+
+    p, 
+    ol, 
+    ul{
+        margin: 20px 0;
+
+        &:first-child{
+            margin-top: 0;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    ul, 
+    ol{
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
         position: relative;
         padding: 0;
         list-style: none;
         font-family: @font1;
     }
+<<<<<<< HEAD
     ul > li {
         box-sizing: border-box;
         position: relative;
         padding-left: 14px;
         &::before {
             content: '';
+=======
+
+    ul > li{
+        box-sizing: border-box;
+        position: relative;
+        padding-left: 14px;
+
+        &::before{
+            content: "";
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
             position: absolute;
             top: 7px;
             left: 0;
@@ -74,6 +152,7 @@
             pointer-events: none;
         }
     }
+<<<<<<< HEAD
     ol {
         counter-reset: li;
         padding: 0;
@@ -107,12 +186,64 @@
         margin: 25px 0 30px;
         padding: 10px 0 10px 25px;
         position: relative;
+=======
+
+    ol{
+        counter-reset: li;
+        padding: 0;
+    }
+
+    ol > li{
+        counter-increment: li;
+
+        &::before{
+            content: counter(li) + ". ";
+            box-sizing: border-box;
+            display: inline-block;
+            min-width: 20px;
+            color: @red;
+            white-space: pre;
+        }
+    }
+
+    ul > li, 
+    ol > li{
+        cursor: default;
+        margin: 0 0 10px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    a{
+        color: @black;
+        text-decoration-color: @black;
+        transition: color 0.2s, text-decoration-color 0.2s;
+
+        &:hover{
+            text-decoration-color: transparent;
+            color: @red;
+        }
+    }
+
+    blockquote{
+        box-sizing: border-box;
+        padding: 10px 0 10px 24px;
+        position: relative;
+        margin: 25px 0 30px;
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
         font-weight: 600;
         font-style: normal;
         color: @black;
 
+<<<<<<< HEAD
         &::before {
             content: '';
+=======
+        &::before{
+            content: "";
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
             position: absolute;
             left: 0;
             top: 0;
@@ -120,14 +251,30 @@
             width: 4px;
             background-color: @red;
         }
+<<<<<<< HEAD
     }
     figure {
         img {
+=======
+
+        &:first-child{
+            margin-top: 0;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    figure{
+        img{
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
             margin: 0;
             display: block;
             width: 100%;
         }
     }
+<<<<<<< HEAD
     figcaption {
         margin: 15px 0 0;
         text-align: left;
@@ -157,3 +304,52 @@
         }
     }
 }
+=======
+
+    figcaption{
+        margin: 15px 0 0;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.3;
+        color: @black;
+        text-align: left;
+
+        &:first-child{
+            margin-top: 0;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    img{
+        &[align],
+        &.alignright{
+            margin: 5px 0;
+
+            & + figcaption{
+                display: none;
+            }
+        }
+
+        &[align = "right"],
+        &.alignright{
+            margin-left: 10px;
+        }
+        
+        &.alignright{
+            float: right;
+        }
+
+        &[align = "left"],
+        &.alignleft{
+            margin-right: 10px;
+        }
+
+        &.alignleft{
+            float: left;
+        }
+    }
+}
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb

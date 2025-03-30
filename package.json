@@ -5,6 +5,7 @@
     "author": "si@tagree.ru",
     "devDependencies": {
         "autoprefixer": "^10.4.2",
+<<<<<<< HEAD
         "browser-sync": "^3.0.3",
         "del": "^6.0.0",
         "gulp": "^4.0.2",
@@ -12,6 +13,14 @@
         "gulp-file-include": "^2.3.0",
         "gulp-format-html": "^1.2.5",
         "gulp-imagemin": "^4.1.0",
+=======
+        "browser-sync": "^2.27.7",
+        "del": "^6.0.0",
+        "gulp-csso": "^4.0.1",
+        "gulp-file-include": "^2.3.0",
+        "gulp-format-html": "^1.2.5",
+        "gulp-imagemin": "^8.0.0",
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
         "gulp-less": "^5.0.0",
         "gulp-plumber": "^1.2.1",
         "gulp-postcss": "^9.0.1",
@@ -19,9 +28,15 @@
         "gulp-svgmin": "^4.1.0",
         "gulp-svgstore": "^9.0.0",
         "gulp-terser": "^2.1.0",
+<<<<<<< HEAD
         "imagemin-gifsicle": "^5.2.0",
         "imagemin-mozjpeg": "^7.0.0",
         "imagemin-optipng": "^5.2.1",
+=======
+        "imagemin-gifsicle": "^7.0.0",
+        "imagemin-mozjpeg": "^10.0.0",
+        "imagemin-optipng": "^8.0.0",
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
         "postcss": "^8.4.5",
         "postcss-sort-media-queries": "^4.2.1"
     },
@@ -31,6 +46,10 @@
         "start": "gulp start"
     },
     "dependencies": {
+<<<<<<< HEAD
         "jquery": "^3.7.1"
+=======
+        "gulp": "^4.0.2"
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
     }
 }

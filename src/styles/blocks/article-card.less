@@ -1,9 +1,21 @@
+<<<<<<< HEAD
 .article-card {
     position: relative;
+=======
+.home {
+    &__listing {
+      margin-bottom: 95px;
+      padding-top: 200px;
+    }
+}
+
+.article-card {
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
     box-sizing: border-box;
     display: flex;
     width: 100%;
     &:hover {
+<<<<<<< HEAD
         .article-card__picture {
             box-shadow: 0 0 30px fade(@black, 55%);
         }
@@ -52,6 +64,52 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+=======
+      .article-card__picture {
+        box-shadow: 0 0 30px fade(@black, 55%);
+      }
+    }
+    &__link {
+      flex-shrink: 0; //чтобы данный блок не сжимался
+      align-self: flex-start; //позиционирование в начале блока 
+      display: block;
+      width: 467px;
+      margin-right: 60px;
+      font-size: 0;
+      text-decoration: none;
+
+      &:hover {
+        &~.article-card__info {
+          .article-card__title-link {
+            color: @red;
+            text-decoration-color: @red;
+          }
+        }
+      }
+  
+    }
+    &__picture {
+      display: block;
+      position: relative;
+      width: 100%;
+      transition: box-shadow 0.2s;
+      overflow: hidden;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-top: 62.3126%;
+      }
+    }
+    &__img {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
     }
     &__info {
         box-sizing: border-box;
@@ -63,18 +121,24 @@
         padding-bottom: 30px;
         padding: 30px 0;
         padding-right: 150px;
+<<<<<<< HEAD
         @media @bw600 {
             padding-right: 0;
         }
+=======
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
     }
     &__time {
         margin: 0 0 40px;
         font-weight: 300;
         font-size: 16px;
         line-height: 22px;
+<<<<<<< HEAD
         @media @bw600 {
             font-size: 14px;
         }
+=======
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
     }
     &__title-link,
     &__description {
@@ -84,10 +148,17 @@
         margin: auto 0 40px;
         color: @black;
         text-decoration-color: transparent;
+<<<<<<< HEAD
         transition: color .2s, text-decoration-color .2s;
         &:hover {
             color: @red;
             text-decoration-color: @red;
+=======
+        transition: color 0.2s, text-decoration-color 0.2s;
+        &:hover {
+          color: @red;
+          text-decoration-color: @red;
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
         }
     }
     &__title {
@@ -96,6 +167,7 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 33px;
+<<<<<<< HEAD
         @media @bw1170 {
             font-size: 20px;
             line-height: 100%;
@@ -104,14 +176,19 @@
             font-size: 16px;
             font-weight: 700;
         }
+=======
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
     }
     &__description {
         margin: 0;
         font-size: 16px;
         line-height: 22px;
+<<<<<<< HEAD
         @media @bw600 {
             font-size: 14px;
         }
+=======
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
     }
     &__arrow {
         position: absolute;
@@ -119,6 +196,7 @@
         bottom: 30px;
         color: inherit;
         transition: none;
+<<<<<<< HEAD
         @media @bw1170 {
             width: 67px;
             height: 40px;
@@ -147,3 +225,29 @@
 
 
 }
+=======
+    }
+
+    position: relative;
+      /* прочие стили */
+    & + .article-card {
+        margin-top: 120px;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          margin: 0 auto 60px;
+          bottom: 100%;
+          left: 0;
+          right: 0;
+          width: 100%;
+          max-width: 1254px;
+          height: 1px;
+          background-color: @black;
+          pointer-events: none;
+        }
+    }
+
+    
+}
+>>>>>>> 05cdf026e219cc6d5702d9254f6c7d6e486eaabb
