@@ -1,0 +1,25 @@
+.arrow {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    &__icon {
+        transition: .3s;
+        @media @bw1170 {
+            width: 67px;
+            height: 40px;
+        }
+        &:hover {
+            color: @red;
+        }
+        &:active {
+            color: @red;
+        }
+        &--90 {
+            rotate: 90deg;
+            transform-origin: center;
+        }
+        &--180 {
+            rotate: 180deg;
+        }
+    }
+}

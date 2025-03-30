@@ -1,0 +1,37 @@
+.offers {
+    .container;
+    &__title {
+        margin: 0  0 46px;
+        margin-left: 18px;
+        font-size: 22px;
+        font-weight: 400;
+        font-family: @font2;
+        @media @bw1170 {
+            font-size: 16px;
+        }
+        @media @bw768 {
+            margin-bottom: 25px;
+        }
+        @media @bw600 {
+            font-size: 13px;
+        }
+    }
+    &__btns {
+        display: flex;
+        justify-content: center;
+        gap: 106px;
+        @media @bw768 {
+            gap: unset;
+            justify-content: space-around;
+        }
+        @media @bw600 {
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+    &__btn2 {
+        @media @bw600 {
+            order: -1;
+        }
+    }
+}

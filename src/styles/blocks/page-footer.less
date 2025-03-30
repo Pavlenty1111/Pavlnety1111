@@ -1,0 +1,175 @@
+.page-footer {
+    .container;
+    padding-bottom: 75px;
+    @media @bw1170 {
+        padding-bottom: 60px;
+    }
+    @media @bw600 {
+        padding-bottom: 50px;
+    }
+    &__liners {
+        display: flex;
+        margin-bottom: 60px;
+        gap: 100px;
+        @media @bw1660 {
+            gap: 90px;
+        }
+        @media @bw1020 {
+            gap: 50px;
+        }
+        @media @bw600 {
+            gap: 20px;
+        }
+        &::before,
+        &::after {
+            content: "";
+            flex-grow: 1;
+            width: 2px;
+            height: 2px;
+        }
+        &::before {
+            background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255,255, 0) 82.86%);
+        }
+        &::after {
+            background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+    &__block {
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+        @media @bw768 {
+            flex-direction: column;
+            gap: 60px;
+        }
+        &-links {
+            display: flex;
+            flex-direction: column;
+            padding-left: 26px;
+            position: relative;
+            gap: 22px;
+            margin-bottom: 60px;
+            @media @bw768 {
+                margin-bottom: 0;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 4px;
+                background-color: @red;
+            }
+        }
+        &-link {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.3;
+            color: @black;
+            transition: color .2s;
+            @media @bw600 {
+                font-size: 14px;
+            }
+            &:hover {
+                @media (hover: hover){
+                    color: @red;
+                }
+            }
+            &:active {
+                color: @red;
+            }
+            @media @bw768 {
+                padding: 2px 0;
+            }
+        }
+    }
+    &__block2 {
+        display: grid;
+        grid-template-columns: 1fr 160px 1fr;
+        grid-template-areas:
+        "copyright socials create"
+        "links socials create";
+        @media @bw1020 {
+            grid-template-areas:
+            "socials socials socials"
+            "copyright copyright create"
+            "links links create";
+        }
+        @media @bw768 {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "socials"
+            "links"
+            "copyright"
+            "create";
+        }
+        &-link  {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+    &__socials {
+        grid-area: socials;
+        @media @bw1020 {
+            margin: 0 auto 60px;
+        }
+        @media @bw768 {
+            margin: 60px auto 60px;
+        }
+        // background-color: @black;
+
+        // stroke: @white;
+    }
+    &__block2-links {
+        grid-area: links;
+        display: flex;
+        gap: 60px;
+        align-self: flex-end;
+        @media @bw1020 {
+            gap: 15px;
+        }
+        @media @bw768 {
+            flex-direction: column;
+            gap: 20px;
+
+        }
+    }
+    &__copyright {
+        grid-area: copyright;
+        align-self: flex-start;
+        @media @bw1020 {
+            margin-bottom: 15px;
+        }
+        @media @bw768 {
+            margin-left: auto;
+            margin: 16px 0 5px auto;
+        }
+    }
+    &__create {
+        grid-area: create;
+        display: flex;
+        margin-left: auto;
+        align-self: flex-end;
+        font-weight: 600;
+        font-size: 16px;
+        gap: 15px;
+        align-items: center;
+    }
+    &__create-icon {
+        cursor: pointer;
+        font-size: 0;
+        color: @black;
+        transition: color .2s;
+        &:hover {
+            @media (hover: hover){
+                color: @red;
+            }
+        }
+        &:active {
+            color: @red;
+        }
+    }
+}

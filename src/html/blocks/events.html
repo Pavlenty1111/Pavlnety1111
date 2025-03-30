@@ -1,0 +1,84 @@
+<div class="events">
+  <section class="listing events__listing">
+      <p class="event-url">Главная  / Мероприятия</p>
+      <h2 class="events__title section-title">Мероприятия</h2>
+      <div class="listing__events-list">
+        <!-- prettier-ignore -->
+        @@loop('event-card.html', [
+          {
+            "class": "listing__event-card",
+            "img": "assets/images/картинки.jpg",
+            "alt": "nirvana",
+            "title": "Собираемся и слушаем альбом Nirvana",
+            "descr": "Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.",
+            "time": "07.12.2022 | начало 18.00",
+            "datetime": "2022-12-07T18:00"
+          },
+          {
+            "class": "listing__event-card",
+            "img": "assets/images/картинки (1).jpg",
+            "alt": "stuff",
+            "title": "Есть тема, нужно обсудить с HowStuffWorks",
+            "descr": "Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.",
+            "time": "14.12.2022 | начало 18.30",
+            "datetime": "2022-12-14T18:30"
+          },
+          {
+            "class": "listing__event-card",
+            "link": "event.html",
+            "img": "assets/images/картинки (2).jpg",
+            "alt": "stuff",
+            "title": "Вечер | The Best of Sade",
+            "descr": "Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка",
+            "time": "16.12.2022 | начало 20.00",
+            "datetime": "2022-12-16T20:00"
+          },
+          {
+            "class": "listing__event-card",
+            "img": "assets/images/картинки (5).jpg",
+            "alt": "stuff",
+            "title": "Выставка Малевича в Томске",
+            "descr": "Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.",
+            "time": "23.12.2022 | начало 20.00",
+            "datetime": "2022-12-23T20:00"
+          },
+          {
+            "class": "listing__event-card",
+            "img": "assets/images/Tatler.jpg",
+            "alt": "stuff",
+            "title": "Мастер — класс по студийной съемке от Tatler",
+            "descr": "Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.",
+            "time": "25.12.2022 | начало 13.00",
+            "datetime": "2022-12-25T13:00"
+          },
+          {
+            "class": "listing__event-card",
+            "img": "assets/images/the hatters.jpg",
+            "alt": "stuff",
+            "title": "Повесилимся на славу на концерте The Hatters",
+            "descr": "Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко",
+            "time": "27.12.2022 | начало 10.00",
+            "datetime": "2022-12-27T10:00"
+          }
+        ])
+      </div>
+      <div class="listing__more">
+        <a href="#" class="events__link link">
+         <p class="listing__more-p">Показать ещё</p>
+          <svg id="arrow" class="arrow__icon arrow__icon--90" width="92" height="62" viewBox="0 0 92 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 52.2132C44.1781 56.4088 49.5013 59.266 55.2966 60.4235C61.0918 61.5811 67.0986 60.987 72.5576 58.7164C78.0166 56.4457 82.6824 52.6006 85.9651 47.6671C89.2479 42.7336 91 36.9334 91 31C91 25.0666 89.2479 19.2664 85.9651 14.3329C82.6824 9.39943 78.0166 5.55425 72.5576 3.28363C67.0986 1.013 61.0918 0.4189 55.2965 1.57646C49.5013 2.73401 44.1781 5.59123 40 9.78681" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M5 31L65 31" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M58 24L65 31L58 38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+      </div>
+    </section>
+    <div>
+
+    </div>
+    <section class="extra-services">
+      <h2 class="section-title extra-services__title">Дополнительные услуги</h2>
+      <p class="extra-services__p">Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная работа, результатом которой будет проведение вашего мероприятия на высшем уровне.</p>
+      @@include('table.html', {"class": "events__tariffs-table"})
+    </section>
+  </div>

@@ -1,0 +1,95 @@
+.contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+    max-width: 401px;
+    min-width: 280px;
+    @media @bw1020 {
+        max-width: 280px;
+        width: 100%;
+        min-width: 224px;
+    }
+    @media @bw768 {
+        min-width: 204px;
+    }
+    @media @bw600 {
+        gap: 30px;
+    }
+    &--column {
+        flex-direction: column;
+        gap: 40px;
+        @media @bw600  {
+            gap: 30px;
+        }
+        .contacts-item__title,
+        .contacts-item__text {
+            text-align: center;
+            max-width: 401px;
+        }
+    }
+    &__wrap-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        height: 110px;
+        background-color: @black;
+        color: @red;
+        @media @bw600 {
+            width: 65px;
+            height: 65px;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        margin: 0 0 10px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.35;
+        @media @bw1170 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        @media @bw600 {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+    &__text {
+        margin: 0 0 5px;
+        color: @black;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.3;
+        @media @bw600 {
+            font-size: 13px;
+        }
+        &[href] {
+            text-decoration: none;
+            transition: color 0.2s;
+            &:hover {
+                @media(hover: hover) {
+                    color: @red;
+                }
+            }
+            &:active {
+                color: @red;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__info {
+        @media @bw1170 {
+                display: flex;
+                text-align: center;
+            }
+            @media @bw600 {
+                text-align: start;
+            }
+    }
+    }

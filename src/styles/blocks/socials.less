@@ -1,0 +1,30 @@
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    &__link {
+        display: flex;
+        flex-shrink: 0;
+        // gap: 40px;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background-color: @black;
+        color: @white;
+        font-size: 0;
+        text-decoration: none;
+        transition: background-color .2s;
+        &:hover {
+            @media (hover: hover) {
+                background-color: @red;
+            }
+        }
+        &:active {
+            background-color: @red;
+        }
+    }
+
+    &__icon {
+        margin: auto;
+    }
+}

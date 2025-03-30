@@ -1,0 +1,22 @@
+.info {
+    &__item {
+        width: 401px;
+    }
+    &__items {
+        .container;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 100px auto 100px;
+        @media @bw1340 {
+            justify-content: space-around;
+            gap: 50px;
+        }
+        @media @bw1170 {
+        }
+        @media @bw600 {
+            margin: 90px auto 100px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.scroll {
+    display: flex;
+    height: 1236px;
+    background-color: @white;
+    background-image: url(../assets/images/noise.png);
+    clip-path: polygon(35% 2%, 100% 0, 100% 100%, 66% 98%, 0 100%, 0 0);
+    &__container {
+        .container();
+        &-title {
+            margin-top: 120px;
+        }
+        &-wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+        }
+        &-wrapper::-webkit-scrollbar {
+            display: none; /* Скрыть скролл в Chrome */
+        }
+        &-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 525px;
+            margin: 70px auto 0;
+            // gap: 343px;
+
+            &-prev,
+            &-next {
+                border-style: none;
+                background: none;
+                cursor: pointer;
+                padding: 0;
+                align-items: center;
+            }
+            &-prev:hover,
+            &-next:hover {
+                color: @red;
+            }
+        }
+    }
+    &__spancontainer {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        &-line {
+            width: 15px;
+            height: 2px;
+            border-radius: 2px;
+            background-color: #BFBFBF;
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.slide {
+    flex: 0 0 calc((100% - 60px) / 3);
+    scroll-snap-align: start;
+    margin: 0;
+}

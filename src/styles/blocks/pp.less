@@ -1,0 +1,145 @@
+.pp {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 90px 95px 50px;
+    background-color: rgba(28, 27, 27, 0.4);
+    backdrop-filter: blur(50px);
+    overflow-y: auto;
+    z-index: 110;
+    display: none;
+    @media @bw1340 {
+      padding: 90px 40px 50px;
+    }
+    @media @bw768 {
+      padding: 80px 20px 40px;
+    }
+
+    &__wrapper {
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 1210px;
+      margin: auto;
+      background-color: @gray;
+      background-image: url(../assets/images/noise.png);
+      background-position: 0 0;
+      background-size: auto;
+      background-repeat: repeat;
+    }
+    &__container {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 0 40px 40px;
+      @media @bw600 {
+        padding: 0 20px 40px;
+      }
+    }
+    &__sticky-close {
+        position: sticky;
+        top: 0;
+        align-self: flex-end;
+        width: 0;
+        height: 0;
+      }
+      &__x-btn {
+        position: absolute;
+        top: -30px;
+        right: -30px;
+        @media @bw768 {
+          top: -15px;
+          right: -15px;
+        }
+      }
+      &__title {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        margin: -40px 0 70px -85px;
+        padding: 10px 85px;
+        max-width: 595px;
+        width: 100%;
+        min-height: 80px;
+        background-color: @black;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: @font2;
+        font-size: 22px;
+        line-height: 1.36;
+        color: @white;
+        letter-spacing: 0.02em;
+        z-index: 1;
+        @media @bw1170 {
+          padding: 10px 60px 10px 20px;
+          margin-left: 0;
+          max-width: 465px;
+        }
+        @media @bw768 {
+          margin: -40px 0 40px;
+          font-size: 18px;
+        }
+        @media @bw500 {
+          margin-right: 25px;
+          width: auto;
+          font-size: 14px;
+        }
+      }
+      .field {
+  &__date {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+  }
+  &__date-inputs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 55px;
+    pointer-events: none;
+  }
+  &__date-input {
+    box-sizing: border-box;
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: @white;
+    padding: 0 5px;
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: center;
+    pointer-events: none;
+    @media @bw400 {
+      font-size: 14px;
+    }
+    &--year {
+      flex-grow: 1;
+      margin-right: 0;
+    }
+  }
+  &__date-picker {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+  }

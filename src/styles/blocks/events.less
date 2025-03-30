@@ -1,0 +1,26 @@
+.events {
+    padding: 40px 0 50px;
+    &__listing {
+        margin-bottom: 100px;
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        transition: color .2s;
+    }
+    &__title {
+        margin-top: 140px;
+        @media @bw1340 {
+          margin: 130px auto 130px;
+        }
+        @media @bw1020 {
+          margin: 91px auto 100px;
+        }
+        @media @bw600 {
+          margin: 40px auto 80px;
+        }
+      }
+}
